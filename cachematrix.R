@@ -1,7 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Lakshmi Muralidharan
+## 5/24/2014
 
-## Write a short comment describing this function
+
+## The functions written below calculates inverse of a matrix and stores it
+## in cache leveraging lexical scoping so that the time consuming process 
+## can be made simpler by accessing the values from the cache.
+
+## The function given below calculates the inverse of the matrix and is
+## used to access the matrix.'<<-' is used to store in a different environment
 
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -19,7 +25,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function will find the inverse of the matrix defined above but will 
+## first check the cache for values
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
